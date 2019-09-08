@@ -22,7 +22,7 @@ jobs:
         if: always()
         with:
           # type: ${{ job.status }}
-          type: cancel
+          type: cancelled
           job_name: ':robot_face: *Check action*'
           channel: '#develop'
           url: ${{ secrets.SLACK_WEBHOOK }}
